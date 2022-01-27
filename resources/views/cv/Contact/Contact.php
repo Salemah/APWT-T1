@@ -1,3 +1,5 @@
+<x-header/>
+
 <body>
     <h1>Contact Details</h1>
     <p>Address: Rajbari</p>

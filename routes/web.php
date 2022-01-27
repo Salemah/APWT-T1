@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\users;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('cv.Home.Home');
 });
 Route::get('/home', function () {
     return view('cv.Home.Home');
@@ -31,3 +32,14 @@ Route::get('/contact', function () {
 Route::get('/login', function () {
     return view('cv.Login.Login');
 });
+Route::get('/test', function () {
+    
+    return view("test");
+});
+
+//Route::view("test",'cv.test'.);
+///Route::view("Route name",'File Name');
+///Route::get("path name",'controller File Name');
+Route::get("users/{name}",[users::class,'index']);
+
+
