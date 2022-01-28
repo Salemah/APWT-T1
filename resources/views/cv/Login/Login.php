@@ -1,5 +1,5 @@
 <body>
-<form>
+<form method="post">
 <fieldset>
 <legend>Login:</legend>
   <label for="fname">First name:</label><br>

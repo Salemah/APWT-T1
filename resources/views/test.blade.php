@@ -1,5 +1,5 @@
 <x-header data="this is test page"/>
 <body>
-<p> Hello, </p>
+<p> Hello,{{name}} </p>
 <p></p>
 </body>
